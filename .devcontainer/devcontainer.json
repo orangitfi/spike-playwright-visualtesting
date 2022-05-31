@@ -1,0 +1,24 @@
+{
+  "name": "wp playwright devcontainer",
+  "dockerComposeFile": [
+    "docker-compose.extend.yml"
+  ],
+  "workspaceFolder": "/workspace",
+  "service": "service",
+  "remoteEnv": {
+
+  },
+  // Set *default* container specific settings.json values on container create.
+  "settings": {},
+  // Add the IDs of extensions you want installed when the container is created.
+  "extensions": [
+    "editorconfig.editorconfig",
+    "ms-playwright.playwright"
+  ],
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [3000],
+  // Use 'postCreateCommand' to run commands after the container is created.
+  //"postCreateCommand": "cp ./.devcontainer/.npmrc-template ~/.npmrc",
+  "shutdownAction": "stopCompose",
+  "remoteUser": "pwuser"
+}
