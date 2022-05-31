@@ -1,0 +1,16 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "wordpress playwright proto",
+  "main": "",
+  "scripts": {
+    "test": "npx playwright test",
+    "update-snapshots": "npx playwright test --update-snapshots"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.22.2",
+    "csvtojson": "^2.0.10"
+  }
+}
